@@ -1,10 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import Media from './src/playlist/components/media';
 //console.log("hola mundo")
 
 //aquí le  digo de  donde  buscarlo a la app
 const container = document.getElementById('app')
 
 //ReactDOM.render(que voy a renderizar, donde lo haré);
-const holaMundo= <h1>hola Estudiantes</h1>;
-ReactDOM.render(holaMundo,app);
+//const holaMundo= <h1>hola Estudiantes</h1>;
+render(<Media title="Qué es responseve Desing?" author="Paulina Collaguazo" image="./images/covers/responsive.jpg"/>,app);
